@@ -2,96 +2,94 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07110d">
-<title>Placaspro | Crie sua placa grátis</title>
+<meta name="theme-color" content="#080808">
+<title>PlacasPro | Placa de avaliação do Google</title>
 <style>
-:root{color-scheme:dark;--bg:#07110d;--panel:#0d1913;--line:#24382c;--green:#b5f36b;--muted:#9aa99e;--white:#f5f8f5}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#1a3525 0,transparent 55%),var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
-.wrap{width:min(1100px,calc(100% - 40px));margin:auto}.top{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}.brand{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:.04em}.mark{width:38px;height:38px;border:1px solid #b5f36b80;border-radius:11px;display:grid;place-items:center;color:var(--green);font-size:19px}.pill{border:1px solid var(--line);border-radius:99px;padding:9px 13px;color:#d4e0d7;font-size:12px}
-main{display:grid;grid-template-columns:1fr .9fr;gap:58px;align-items:center;padding:76px 0 70px}.eyebrow{color:var(--green);font-size:12px;font-weight:800;letter-spacing:.17em;text-transform:uppercase;display:flex;align-items:center;gap:9px}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 14px #b5f36b}.hero h1{font-size:clamp(42px,5vw,66px);letter-spacing:-.055em;line-height:1.03;margin:20px 0 18px;max-width:610px}.hero h1 span{color:var(--green)}.intro{color:var(--muted);line-height:1.75;font-size:16px;max-width:480px;margin:0 0 30px}.formbox{background:#0d1913;border:1px solid var(--line);border-radius:18px;padding:22px;max-width:510px;box-shadow:0 25px 80px #0003}.label{display:block;font-size:13px;font-weight:700;margin-bottom:10px}.field{width:100%;background:#07110d;border:1px solid #304638;border-radius:10px;color:white;font:inherit;padding:16px 15px;outline:none}.field:focus{border-color:var(--green);box-shadow:0 0 0 3px #b5f36b15}.hint{color:#829287;font-size:12px;margin-top:8px}.cta{margin-top:18px;width:100%;border:0;border-radius:10px;padding:16px 18px;background:var(--green);color:#10200d;font-weight:850;font-size:15px;cursor:pointer;transition:transform .15s,filter .15s}.cta:hover{filter:brightness(1.05);transform:translateY(-1px)}.cta:disabled{opacity:.65;cursor:wait;transform:none}.privacy{display:flex;gap:8px;align-items:center;color:#91a196;font-size:11px;margin-top:14px}.visual{min-height:420px;display:flex;align-items:center;justify-content:center;position:relative}.glow{position:absolute;width:330px;height:330px;background:#a5f45a12;filter:blur(65px);border-radius:50%}.preview{position:relative;width:100%;min-height:380px;max-width:410px;border:1px solid #314539;border-radius:24px;background:linear-gradient(145deg,#14251a,#0a130e 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;overflow:hidden;box-shadow:0 30px 90px #0005}.preview:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,#ffffff05 48%,transparent 62%);pointer-events:none}.placeholder-icon{width:72px;height:72px;border:1px solid #49634f;border-radius:20px;display:grid;place-items:center;color:var(--green);margin-bottom:20px}.preview h2{font-size:18px;margin:0 0 10px}.preview p{font-size:13px;line-height:1.65;color:var(--muted);text-align:center;max-width:260px;margin:0}.preview img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#080d09}.result-actions{position:absolute;z-index:2;bottom:14px;left:14px;right:14px;display:flex;gap:8px}.result-actions a{flex:1;text-align:center;text-decoration:none;background:var(--green);color:#10200d;font-weight:800;font-size:13px;padding:12px;border-radius:9px}.result-actions button{border:1px solid #ffffff50;background:#101c15eF;color:white;border-radius:9px;padding:10px 13px;cursor:pointer}.status{font-size:13px;color:var(--green);margin-top:12px;min-height:18px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:0 0 58px}.feature{border-top:1px solid var(--line);padding:18px 6px}.feature b{display:block;font-size:13px;margin-bottom:7px}.feature p{font-size:12px;color:var(--muted);line-height:1.6;margin:0}.ico{color:var(--green);margin-bottom:10px;font-size:18px}footer{border-top:1px solid #ffffff12;padding:23px 0;color:#738278;font-size:12px;display:flex;justify-content:space-between;gap:12px}
-@media(max-width:800px){main{grid-template-columns:1fr;gap:35px;padding:52px 0 45px}.hero h1{font-size:clamp(42px,11vw,58px)}.visual{min-height:340px}.preview{min-height:330px}.features{gap:10px}.wrap{width:min(100% - 30px,600px)}.pill{display:none}}
-@media(max-width:480px){.features{grid-template-columns:1fr}.feature{padding:15px 4px}.top{height:70px}.brand{font-size:13px}.mark{width:34px;height:34px}.formbox{padding:17px}.visual{min-height:310px}footer{flex-direction:column}}
+:root{color-scheme:dark;--bg:#090909;--panel:#141414;--line:#333;--white:#f7f7f7;--muted:#aaa;--gold:#f5c451}
+*{box-sizing:border-box}body{margin:0;background:#090909;color:var(--white);font-family:Arial,Helvetica,sans-serif}.wrap{width:min(1080px,calc(100% - 32px));margin:auto}.top{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #292929}.brand{font-weight:900;letter-spacing:.1em;font-size:17px}.brand span{color:#f5c451}.tag{font-size:12px;color:#bbb;border:1px solid #333;border-radius:30px;padding:9px 12px}main{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center;padding:48px 0}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f5c451;font-weight:bold}h1{font-size:clamp(34px,4vw,53px);line-height:1.05;letter-spacing:-.04em;margin:16px 0}h1 span{color:#f5c451}.intro{color:#b8b8b8;line-height:1.7;margin-bottom:25px}.formbox{background:#141414;border:1px solid #333;border-radius:16px;padding:20px}.label{display:block;font-size:13px;font-weight:bold;margin:0 0 8px}.field{width:100%;background:#090909;border:1px solid #3a3a3a;border-radius:9px;color:#fff;font:inherit;padding:13px;margin-bottom:16px}.field:focus{outline:1px solid #f5c451}.file{font-size:12px}.hint{font-size:11px;color:#999;margin:-8px 0 15px}.cta{width:100%;border:0;border-radius:9px;background:#f5c451;color:#17130a;padding:15px;font-weight:900;font-size:14px;cursor:pointer}.cta:disabled{opacity:.6}.status{font-size:12px;color:#f5c451;min-height:20px;margin-top:12px;line-height:1.5}.stage{display:flex;justify-content:center;align-items:center;padding:10px}.plaque{width:min(100%,390px);aspect-ratio:4/5;background:linear-gradient(135deg,#272727,#080808 35%,#181818 68%,#050505);border:1px solid #8c8c8c;box-shadow:0 25px 70px #000;border-radius:5px;padding:24px 22px 20px;text-align:center;display:flex;flex-direction:column;align-items:center;position:relative;overflow:hidden}.plaque:before{content:"";position:absolute;inset:7px;border:1px solid #ffffff1c;pointer-events:none}.plaque>*{position:relative}.logo{width:64px;height:64px;object-fit:contain;border-radius:50%;margin:2px auto 10px;display:none}.business{font-size:clamp(20px,2.4vw,27px);font-weight:800;line-height:1.2;overflow-wrap:anywhere;margin:0 0 14px}.review-title{font-size:13px;font-weight:800;letter-spacing:.08em;margin:0 0 8px}.google{font-size:19px;font-weight:700;margin-bottom:5px}.google span:nth-child(1){color:#4285f4}.google span:nth-child(2){color:#ea4335}.google span:nth-child(3){color:#fbbc05}.google span:nth-child(4){color:#4285f4}.google span:nth-child(5){color:#34a853}.google span:nth-child(6){color:#ea4335}.stars{font-size:25px;letter-spacing:3px;color:#fbbc04;margin:0 0 12px}.qr-frame{background:white;padding:9px;width:145px;height:145px;display:grid;place-items:center;margin:0 auto 12px;border-radius:2px}.qr-frame img,.qr-frame canvas{width:127px!important;height:127px!important}.scan{font-size:12px;font-weight:700;letter-spacing:.06em;margin:0 0 7px}.thanks{font-size:10px;color:#c8c8c8;margin:0}.bottomline{width:60px;height:2px;background:#f5c451;margin:15px auto 0}.foot{color:#777;font-size:11px;text-align:center;padding:0 0 25px}.hidden{position:absolute;left:-9999px;top:-9999px}@media(max-width:760px){main{grid-template-columns:1fr;gap:28px;padding:35px 0}.stage{order:2}.tag{display:none}.plaque{width:min(100%,350px)}h1{font-size:40px}} 
 </style>
 </head>
 <body>
-<header class="wrap top"><div class="brand"><div class="mark">P</div><span>PLACAS AVALIAÇÃO</span></div><div class="pill">✦ Criação gratuita no navegador</div></header>
+<header class="wrap top"><div class="brand">PLACAS<span>PRO</span></div><div class="tag">MODELO TRADICIONAL · FUNDO PRETO FIXO</div></header>
 <main class="wrap">
-<section class="hero"><div class="eyebrow"><span class="dot"></span> Sua placa personalizada</div><h1>Seu nome. Sua marca. <span>Uma placa profissional.</span></h1><p class="intro">Digite o nome da sua empresa e crie uma prévia elegante da sua placa. Sem cadastro, sem créditos e sem cobrança por geração.</p>
-<form class="formbox" id="form"><label class="label" for="name">Qual nome vai na sua placa?</label><input class="field" id="name" name="name" maxlength="60" placeholder="Ex.: Clínica São Lucas" autocomplete="organization" required><div class="hint">Digite exatamente como o nome deve aparecer.</div><button class="cta" id="submit" type="submit">✦ Criar minha placa grátis</button><div class="status" id="status" role="status" aria-live="polite"></div><div class="privacy">♢ A imagem só será criada quando você clicar no botão.</div></form></section>
-<section class="visual" aria-label="Resultado da placa"><div class="glow"></div><div class="preview" id="preview"><div class="placeholder-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h7M7 16h4"/></svg></div><h2>Sua placa vai aparecer aqui</h2><p>O resultado será exibido somente depois que você gerar a imagem.</p></div></section>
+<section>
+<div class="eyebrow">Placa de avaliação do Google</div>
+<h1>Transforme avaliações em <span>mais confiança.</span></h1>
+<p class="intro">Personalize a placa tradicional de acrílico preto com o nome e a logo do cliente. Informe o link de avaliação para gerar um QR Code que leva diretamente à página correta do Google. Sem créditos de IA.</p>
+<form class="formbox" id="form">
+<label class="label" for="name">Nome da empresa</label>
+<input class="field" id="name" maxlength="55" placeholder="Ex.: João Empório" required>
+<label class="label" for="logo">Logo da empresa (opcional)</label>
+<input class="field file" id="logo" type="file" accept="image/*">
+<div class="hint">A logo é usada somente nesta prévia, no seu navegador.</div>
+<label class="label" for="review">Link de avaliação do Google</label>
+<input class="field" id="review" type="url" placeholder="Cole aqui o link de avaliações do Google" required>
+<div class="hint">O QR Code será criado com este link. Teste-o antes de produzir a placa.</div>
+<button class="cta" id="submit" type="submit">CRIAR MINHA PLACA GRÁTIS</button>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+</form>
+</section>
+<section class="stage" aria-label="Prévia da placa">
+<div class="plaque" id="plaque">
+<img class="logo" id="logoPreview" alt="Logo da empresa">
+<h2 class="business" id="business">NOME DA EMPRESA</h2>
+<p class="review-title">AVALIE NOSSO ATENDIMENTO</p>
+<div class="google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>
+<div class="stars">★★★★★</div>
+<div class="qr-frame" id="qrFrame"><span style="color:#222;font-size:11px">QR CODE</span></div>
+<p class="scan">APONTE A CÂMERA E AVALIE</p>
+<p class="thanks">Sua opinião é muito importante para nós!</p>
+<div class="bottomline"></div>
+</div>
+</section>
 </main>
-<section class="wrap features"><div class="feature"><div class="ico">✳</div><b>Visual profissional</b><p>Uma apresentação elegante, pensada para valorizar o nome da sua empresa.</p></div><div class="feature"><div class="ico">⌘</div><b>Simples de criar</b><p>Digite o nome e monte uma proposta visual personalizada no próprio navegador.</p></div><div class="feature"><div class="ico">↓</div><b>Pronta para baixar</b><p>Depois da geração, salve a imagem para consultar ou compartilhar.</p></div></section>
-<footer class="wrap"><span>© 2026 Placas Avaliação</span><span>Feito para dar destaque à sua marca.</span></footer>
+<div class="wrap foot">Prévia gratuita no navegador · O fundo, o layout e o estilo da placa são fixos.</div>
+<div id="qrWork" class="hidden" aria-hidden="true"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
-const form=document.getElementById('form'), nameInput=document.getElementById('name'), submit=document.getElementById('submit'), statusEl=document.getElementById('status'), preview=document.getElementById('preview');
-function escapeXml(value){return value.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));}
-function createPlaqueSvg(name){
-  const safe=escapeXml(name);
-  const words=name.trim().split(/\s+/);
-  const lines=[]; let line='';
-  for(const word of words){const next=line?line+' '+word:word;if(next.length>22&&line){lines.push(line);line=word;}else line=next;}
-  if(line)lines.push(line);
-  const shown=lines.slice(0,3);
-  const fontSize=shown.length>2?43:(name.length>22?46:58);
-  const text=shown.map((part,i)=>'<tspan x="450" dy="'+(i===0?0:fontSize*1.22)+'">'+escapeXml(part)+'</tspan>').join('');
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125">
-  <defs>
-    <linearGradient id="room" x2="1" y2="1"><stop stop-color="#23392d"/><stop offset=".52" stop-color="#111d16"/><stop offset="1" stop-color="#070b08"/></linearGradient>
-    <linearGradient id="acrylic" x2="1" y2="1"><stop stop-color="#242a27"/><stop offset=".38" stop-color="#080b09"/><stop offset=".72" stop-color="#151a17"/><stop offset="1" stop-color="#030504"/></linearGradient>
-    <linearGradient id="shine" x2="1" y2="0"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".48" stop-color="#fff" stop-opacity=".13"/><stop offset=".62" stop-color="#fff" stop-opacity=".02"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-    <linearGradient id="edge" x2="0" y2="1"><stop stop-color="#c8d3cc"/><stop offset=".5" stop-color="#66736b"/><stop offset="1" stop-color="#202923"/></linearGradient>
-    <filter id="shadow" x="-40%" y="-40%" width="180%" height="200%"><feGaussianBlur stdDeviation="24"/></filter>
-  </defs>
-  <rect width="900" height="1125" fill="url(#room)"/>
-  <circle cx="150" cy="145" r="180" fill="#a5f45a" opacity=".08" filter="url(#shadow)"/>
-  <rect x="80" y="90" width="170" height="450" rx="12" fill="#b8d3bf" opacity=".06"/>
-  <path d="M120 90V540M205 90V540" stroke="#d7e9dc" stroke-opacity=".08" stroke-width="8"/>
-  <rect x="560" y="100" width="240" height="330" rx="8" fill="#c4d7ca" opacity=".04"/>
-  <path d="M0 790 Q450 730 900 790V1125H0Z" fill="#101a13"/>
-  <ellipse cx="450" cy="830" rx="320" ry="54" fill="#000" opacity=".62" filter="url(#shadow)"/>
-  <path d="M360 708 L540 708 L575 795 L325 795Z" fill="#111713" stroke="#344038" stroke-width="3"/>
-  <path d="M380 725H520L540 777H360Z" fill="#202923"/>
-  <rect x="132" y="290" width="636" height="450" rx="20" fill="#000" opacity=".6" filter="url(#shadow)"/>
-  <rect x="135" y="270" width="630" height="455" rx="18" fill="url(#edge)"/>
-  <rect x="143" y="278" width="614" height="439" rx="13" fill="url(#acrylic)" stroke="#050706" stroke-width="3"/>
-  <path d="M154 290H746L690 450H210Z" fill="url(#shine)"/>
-  <path d="M158 293H742" stroke="#fff" stroke-opacity=".24" stroke-width="2"/>
-  <rect x="168" y="303" width="564" height="389" rx="8" fill="none" stroke="#fff" stroke-opacity=".08" stroke-width="2"/>
-  <circle cx="177" cy="312" r="4" fill="#a8b2ab" opacity=".65"/><circle cx="723" cy="312" r="4" fill="#a8b2ab" opacity=".65"/>
-  <circle cx="177" cy="683" r="4" fill="#a8b2ab" opacity=".65"/><circle cx="723" cy="683" r="4" fill="#a8b2ab" opacity=".65"/>
-  <text x="450" y="${shown.length===1?495:465-(shown.length-1)*25}" text-anchor="middle" fill="#f4f6f4" font-family="Arial, Helvetica, sans-serif" font-size="${fontSize}" font-weight="600" letter-spacing=".5">${text}</text>
-  <path d="M260 545H640" stroke="#b5f36b" stroke-opacity=".7" stroke-width="3"/>
-  <text x="450" y="590" text-anchor="middle" fill="#a9b5ad" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="5">SUA MARCA</text>
-  <path d="M165 700H735" stroke="#fff" stroke-opacity=".1" stroke-width="2"/>
-  <rect x="0" y="920" width="900" height="205" fill="#050806" opacity=".22"/>
-  </svg>`;
+const form=document.getElementById('form'), nameInput=document.getElementById('name'), reviewInput=document.getElementById('review'), logoInput=document.getElementById('logo'), submit=document.getElementById('submit'), statusEl=document.getElementById('status'), business=document.getElementById('business'), logoPreview=document.getElementById('logoPreview'), qrFrame=document.getElementById('qrFrame'), qrWork=document.getElementById('qrWork'), plaque=document.getElementById('plaque');
+let logoData='', generatedUrl='';
+nameInput.addEventListener('input',()=>business.textContent=nameInput.value.trim()||'NOME DA EMPRESA');
+logoInput.addEventListener('change',()=>{const file=logoInput.files&&logoInput.files[0];if(!file){logoData='';logoPreview.style.display='none';return;}const reader=new FileReader();reader.onload=()=>{logoData=reader.result;logoPreview.src=logoData;logoPreview.style.display='block';};reader.readAsDataURL(file);});
+function rounded(ctx,x,y,w,h,r){ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill();}
+function loadImage(src){return new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=reject;im.src=src;});}
+async function createQrData(url){
+ if(typeof QRCode==='undefined')throw new Error('A biblioteca de QR Code não carregou. Verifique sua conexão e tente novamente.');
+ qrWork.innerHTML='';
+ new QRCode(qrWork,{text:url,width:320,height:320,correctLevel:QRCode.CorrectLevel.H});
+ const canvas=qrWork.querySelector('canvas');
+ if(canvas)return canvas.toDataURL('image/png');
+ const img=qrWork.querySelector('img');if(img){if(!img.complete)await new Promise((r,j)=>{img.onload=r;img.onerror=j;});return img.src;}
+ throw new Error('Não foi possível gerar o QR Code.');
 }
-async function makePng(svg){
-  const blob=new Blob([svg],{type:'image/svg+xml;charset=utf-8'});
-  const url=URL.createObjectURL(blob);
-  try{const img=new Image();img.src=url;await img.decode();const canvas=document.createElement('canvas');canvas.width=1200;canvas.height=1500;const ctx=canvas.getContext('2d');ctx.drawImage(img,0,0,canvas.width,canvas.height);return canvas.toDataURL('image/png');}
-  finally{URL.revokeObjectURL(url);}
+async function renderPlaque(name,qrData){
+ const c=document.createElement('canvas');c.width=900;c.height=1125;const x=c.getContext('2d');
+ const bg=x.createLinearGradient(0,0,900,1125);bg.addColorStop(0,'#282828');bg.addColorStop(.3,'#070707');bg.addColorStop(.7,'#171717');bg.addColorStop(1,'#030303');x.fillStyle=bg;x.fillRect(0,0,900,1125);
+ x.strokeStyle='#a0a0a0';x.lineWidth=3;x.strokeRect(13,13,874,1099);x.strokeStyle='#ffffff2a';x.lineWidth=2;x.strokeRect(27,27,846,1071);
+ let y=120;
+ if(logoData){const im=await loadImage(logoData);const s=Math.min(150/im.width,150/im.height);const w=im.width*s,h=im.height*s;x.save();x.beginPath();x.arc(450,145,78,0,Math.PI*2);x.clip();x.fillStyle='#fff';x.fill();x.drawImage(im,450-w/2,145-h/2,w,h);x.restore();y=260;}
+ x.fillStyle='#fff';x.textAlign='center';x.textBaseline='middle';let fs=name.length>28?44:name.length>18?53:65;x.font='bold '+fs+'px Arial';while(x.measureText(name).width>760&&fs>30){fs-=2;x.font='bold '+fs+'px Arial';}x.fillText(name,450,y,760);
+ const titleY=y+(logoData?100:105);x.fillStyle='#f5f5f5';x.font='bold 28px Arial';x.fillText('AVALIE NOSSO ATENDIMENTO',450,titleY);
+ const gy=titleY+52;x.font='bold 45px Arial';const letters=[['G','#4285f4'],['o','#ea4335'],['o','#fbbc05'],['g','#4285f4'],['l','#34a853'],['e','#ea4335']];let widths=letters.map(([t])=>x.measureText(t).width);x.textAlign='left';let total=widths.reduce((a,b)=>a+b,0),gx=450-total/2;letters.forEach(([t,col],i)=>{x.fillStyle=col;x.fillText(t,gx,gy);gx+=widths[i];});
+ x.textAlign='center';x.fillStyle='#fbbc04';x.font='bold 58px Arial';x.fillText('★★★★★',450,gy+60);
+ const qr=await loadImage(qrData);const qx=310,qy=gy+105,qsize=280;x.fillStyle='#fff';x.fillRect(qx-18,qy-18,qsize+36,qsize+36);x.drawImage(qr,qx,qy,qsize,qsize);
+ x.fillStyle='#fff';x.font='bold 26px Arial';x.fillText('APONTE A CÂMERA E AVALIE',450,qy+qsize+75);x.fillStyle='#c9c9c9';x.font='22px Arial';x.fillText('Sua opinião é muito importante para nós!',450,qy+qsize+116);
+ x.fillStyle='#f5c451';x.fillRect(375,1050,150,5);
+ return c.toDataURL('image/png');
 }
-form.addEventListener('submit',async(e)=>{
-  e.preventDefault();
-  const name=nameInput.value.trim();
-  if(!name){nameInput.focus();return;}
-  submit.disabled=true;
-  submit.textContent='Montando sua placa...';
-  statusEl.textContent='Montando uma prévia personalizada no navegador.';
-  try{
-    const png=await makePng(createPlaqueSvg(name));
-    preview.innerHTML='';
-    const img=document.createElement('img');
-    img.alt='Prévia da placa personalizada com o nome '+name;
-    img.src=png;
-    const actions=document.createElement('div');actions.className='result-actions';
-    const link=document.createElement('a');link.href=png;link.download='placa-'+name.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[^a-z0-9]+/g,'-')+'.png';link.textContent='↓ Baixar imagem';
-    const again=document.createElement('button');again.type='button';again.textContent='Nova placa';
-    again.onclick=()=>{preview.innerHTML='<div class="placeholder-icon"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h7M7 16h4"/></svg></div><h2>Sua placa vai aparecer aqui</h2><p>O resultado será exibido somente depois que você criar a prévia.</p>';statusEl.textContent='';};
-    actions.append(link,again);preview.append(img,actions);statusEl.textContent='Sua placa está pronta para baixar!';
-  }catch(err){statusEl.textContent='Não foi possível montar a imagem neste navegador. Tente novamente.';console.error(err);}
-  finally{submit.disabled=false;submit.textContent='✦ Criar minha placa grátis';}
+form.addEventListener('submit',async e=>{
+ e.preventDefault();const name=nameInput.value.trim(),url=reviewInput.value.trim();
+ if(!name||!url)return;
+ try{new URL(url);if(!/^https?:$/.test(new URL(url).protocol))throw new Error();}catch{statusEl.textContent='Cole um link válido de avaliação do Google.';return;}
+ submit.disabled=true;submit.textContent='CRIANDO PLACA...';statusEl.textContent='Gerando o QR Code e montando a placa no navegador...';
+ try{
+  const qrData=await createQrData(url);generatedUrl=await renderPlaque(name,qrData);
+  business.textContent=name;qrFrame.innerHTML='';const qimg=document.createElement('img');qimg.src=qrData;qimg.alt='QR Code para avaliação';qrFrame.appendChild(qimg);
+  let preview=document.getElementById('downloadArea');if(!preview){preview=document.createElement('div');preview.id='downloadArea';preview.style.cssText='width:100%;max-width:390px;margin:14px auto 0;';document.querySelector('.stage').appendChild(preview);}
+  preview.innerHTML='';const a=document.createElement('a');a.href=generatedUrl;a.download='placa-avaliacao-'+name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-')+'.png';a.textContent='BAIXAR PLACA EM PNG';a.style.cssText='display:block;background:#f5c451;color:#17130a;text-align:center;text-decoration:none;padding:14px;border-radius:8px;font-size:13px;font-weight:900;';
+  preview.appendChild(a);statusEl.textContent='Placa pronta! Antes de imprimir, escaneie o QR Code e confirme que abre o link correto.';
+ }catch(err){statusEl.textContent=err.message||'Não foi possível criar a placa. Tente novamente.';}
+ finally{submit.disabled=false;submit.textContent='CRIAR MINHA PLACA GRÁTIS';}
 });
 </script>
 </body></html>
